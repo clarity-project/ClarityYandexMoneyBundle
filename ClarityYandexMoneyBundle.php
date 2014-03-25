@@ -10,4 +10,13 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  */
 class ClarityYandexMoneyBundle extends Bundle
 {
+    /**
+     * {@inheritDoc}
+     */
+    public function build(ContainerBuilder $container)
+    {
+        parent::build($container);
+
+        $container->registerExtension(new DependencyInjection\YandexMoneyExtension());
+    }
 }
