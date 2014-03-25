@@ -61,8 +61,22 @@ public function registerBundles()
 
 <a name="usage"></a>
 
-## Usage
+## Usage (Under construction!)
 
-Under construction!
+For using client from [official PHP-SDK](https://github.com/yandex-money/yandex-money-sdk-php) as service in symfony you are need add configuration:
+
+``` yml
+# app/config/config.yml
+
+# ...
+yandex_money:
+    client_id: YOUR_APP_CLIENT_ID
+    redirect_uri: YOUR_APP_REDIRECT_URI
+    client_secret: YOUR_APP_CLIENT_SECRET
+    log_path: %kernel.root_dir%/logs/yandex_money.log
+    scope: ['account-info', 'operation-history', 'operation-details']
+# ... 
+```
+
 
 Thanks for reading & using! =)
