@@ -53,7 +53,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Clarity\YandexMoenyBundle\ClarityYandexMoneyBundle(),
+        new Clarity\YandexMoneyBundle\ClarityYandexMoneyBundle(),
     );
     // ...
 }
